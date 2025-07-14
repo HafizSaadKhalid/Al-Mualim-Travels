@@ -13,8 +13,8 @@ body {
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(16, 31, 49, 0.776),
-      rgba(20, 29, 65, 0.8)
+      rgba(54, 103, 164, 0.776),
+      rgba(50, 70, 147, 0.8)
     ),
     url("images/Rectangle 12.png");
   height: 800px;
@@ -49,9 +49,10 @@ body {
         font-family: "Open Sans", sans-serif;
 
         &:hover {
-          background-color: black;
-          scale: 1.05;
-          transition: 0.5s;
+          background-color: #dbae58;
+          /* scale: 1.05; */
+          color: #344160;
+          /* transition: 0.5s; */
         }
       }
     }
@@ -90,10 +91,11 @@ body {
       cursor: pointer;
 
       &:hover {
-        background-color: black;
-        border-color: black;
-        scale: 1.05;
-        transition: 0.5s;
+        background-color: #dbae58;
+        border-color: #dbae58;
+        /* scale: 1.05; */
+        /* transition: 0.5s; */
+        color: #344160;
       }
     }
   }
@@ -128,20 +130,20 @@ body {
     font-weight: 400;
     h3 {
       color: black;
+      letter-spacing: -1px;
     }
   }
   .hajj-images {
     width: 82%;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 30px;
     gap: 50px;
     display: flex;
     justify-content: center;
 
-    img{
+    img {
       width: 100%;
     }
-
   }
 }
 .umrah-packages {
@@ -155,17 +157,18 @@ body {
     font-weight: 400;
     h3 {
       color: black;
+      letter-spacing: -1px;
     }
   }
   .umrah-images {
     width: 82%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     gap: 37px;
     display: flex;
     justify-content: center;
 
-        img{
+    img {
       width: 100%;
     }
   }
@@ -174,6 +177,9 @@ body {
   width: 100%;
 
   .Domestic-heading {
+    h3 {
+      letter-spacing: -1px;
+    }
     font-family: "Lato", sans-serif;
     font-size: 36px;
     margin-top: 50px;
@@ -186,19 +192,18 @@ body {
   .Domestic-images {
     width: 82%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     gap: 42px;
     display: flex;
     justify-content: center;
 
-        img{
+    img {
       width: 100%;
     }
   }
 }
-
 .international-tour-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(to right, rgba(41, 68, 128, 0.5), rgba(43, 83, 141, 0.5)),
     url("images/image\ \(2\).png");
 
   width: 100%;
@@ -226,8 +231,9 @@ body {
       color: white;
       text-align: center;
       font-size: 22px;
-      font-weight: 400;
+      font-weight: 300;
       margin-top: 15px;
+      max-width: 760px;
     }
   }
 
@@ -239,17 +245,15 @@ body {
     margin: auto;
     margin-top: 50px;
 
-        img{
+    img {
       width: 100%;
     }
   }
 }
-
-
-
 .choose-us-section {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 70px;
+  
   position: relative;
 
   .content {
@@ -268,7 +272,7 @@ body {
     height: 350px;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 30px;
     gap: 20px;
 
     .box {
@@ -284,10 +288,13 @@ body {
       align-items: center;
       flex-direction: column;
       padding: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: 0.4s;
 
       &:hover {
-        transition: 0.1s;
         scale: 1.02;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
       }
 
       h4 {
@@ -315,7 +322,7 @@ body {
   .circle {
     position: absolute;
     left: 41.5%;
-    top: 20%;
+    top: 14%;
     background-color: #3669cb;
     width: 52px;
     height: 52px;
@@ -371,13 +378,14 @@ body {
     gap: 20px;
     align-items: center;
 
-    p {
+    .color {
       font-family: "Lato", sans-serif;
       font-size: 18px;
       font-weight: 300;
+      color: #c19a52;
     }
     .line {
-      color: rgb(255, 255, 255);
+      color: #c19a52;
       width: 15%;
       border-bottom: 2px solid;
     }
@@ -415,10 +423,12 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.4s;
 
         &:hover {
-          scale: 1.05;
-          transition: 0.2s;
+          scale: 1.02;
+          transform: translateY(-8px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         }
       }
       p {
@@ -440,8 +450,8 @@ body {
 .services-section {
   background: linear-gradient(
       to right,
-      rgba(39, 61, 117, 0.4),
-      rgba(14, 34, 69, 0.4)
+      rgba(21, 46, 109, 0.4),
+      rgba(15, 47, 101, 0.4)
     ),
     url("images/Rectangle\ 68.png");
   width: 100%;
@@ -450,6 +460,8 @@ body {
   background-size: cover;
   margin-top: 30px;
   padding: 50px;
+  background-position: bottom;
+
   h3 {
     font-family: "Lato", sans-serif;
     color: white;
@@ -462,7 +474,7 @@ body {
     font-size: 21px;
     text-align: center;
     margin-top: 15px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
     max-width: 1250px;
     margin: 15px auto;
@@ -482,7 +494,7 @@ body {
     .content-box {
       width: 46%;
       height: 105px;
-      background-color: rgb(4, 16, 38);
+      background-color: rgb(14, 34, 74, 1);
       border-radius: 20px;
       display: flex;
       justify-content: space-between;
@@ -537,6 +549,7 @@ body {
     margin-top: 12px;
     color: black;
     letter-spacing: 1px;
+    font-weight: 300;
   }
   .describe-section {
     width: 80%;
@@ -548,7 +561,7 @@ body {
     gap: 80px;
 
     .boxes {
-      background-color: #1c2a3e;
+      background-color: #0e224a;
       border-radius: 10px;
 
       img {
@@ -606,6 +619,7 @@ body {
     margin-top: 8px;
     color: black;
     letter-spacing: 1px;
+    font-weight: 300;
   }
   .boxes {
     width: 70%;
@@ -616,21 +630,21 @@ body {
     gap: 40px;
 
     .box {
-      background-color: #f8f8f8;
+      background-color: #0e224a;
       max-width: 420px;
       min-width: 370px;
       padding: 30px;
       border-radius: 22px;
       font-family: "Lato", sans-serif;
       font-weight: 400;
-      color: rgb(133, 133, 133);
+      color: rgb(206, 206, 206);
 
       .style {
         font-family: "Lato", sans-serif;
         font-weight: 200;
         letter-spacing: 1px;
         font-size: 17px;
-        color: black;
+        color: rgb(255, 255, 255);
       }
       .top-section {
         display: flex;
@@ -654,7 +668,7 @@ body {
         align-items: center;
         h5 {
           font-size: 15px;
-          color: rgb(89, 89, 89);
+          color: rgb(255, 255, 255);
           margin-bottom: 3px;
           font-weight: 400;
         }
@@ -665,7 +679,6 @@ body {
     }
   }
 }
-
 .last-section {
   background-color: black;
   margin-top: 60px;
@@ -676,9 +689,8 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 120px 0px;
+    padding:20px 0px;
     margin: auto;
-    /* background-color: #878787; */
     gap: 90px;
 
     .box-one {
@@ -698,7 +710,6 @@ body {
       display: flex;
       justify-content: space-around;
       width: 60%;
-      /* hello */
 
       .box {
         max-width: 200px;
@@ -725,7 +736,11 @@ body {
           list-style-type: none;
 
           li {
-            margin-top: 8px;
+            margin-top: 12px;
+
+            &:hover{
+              text-decoration: underline;
+            }
           }
 
           a {
@@ -742,19 +757,11 @@ body {
           display: flex;
           flex-direction: column;
           gap: 5px;
-          margin-top: 20px;
+          margin-top: 10px;
 
           .call-section {
             display: flex;
             justify-content: space-between;
-
-            /* .icon-section{
-              width: 20%;
-              border: 1px solid;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            } */
 
             .content {
               width: 78%;
@@ -780,10 +787,9 @@ body {
     }
   }
 }
-
 .bottom-two {
   width: 100%;
-  padding: 25px 85px;
+  padding: 15px 85px;
   background-color: #202020;
   display: flex;
   justify-content: space-between;
