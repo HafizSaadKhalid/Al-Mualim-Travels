@@ -133,18 +133,6 @@ body {
       letter-spacing: -1px;
     }
   }
-  .hajj-images {
-    width: 82%;
-    margin: auto;
-    margin-top: 30px;
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 100%;
-    }
-  }
 }
 .umrah-packages {
   width: 100%;
@@ -158,18 +146,6 @@ body {
     h3 {
       color: black;
       letter-spacing: -1px;
-    }
-  }
-  .umrah-images {
-    width: 82%;
-    margin: auto;
-    margin-top: 30px;
-    gap: 37px;
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 100%;
     }
   }
 }
@@ -189,18 +165,6 @@ body {
       color: black;
     }
   }
-  .Domestic-images {
-    width: 82%;
-    margin: auto;
-    margin-top: 30px;
-    gap: 42px;
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 100%;
-    }
-  }
 }
 .international-tour-section {
   background: linear-gradient(to right, rgba(41, 68, 128, 0.5), rgba(43, 83, 141, 0.5)),
@@ -212,6 +176,7 @@ body {
   padding-top: 20px;
   background-size: cover;
   padding-bottom: 50px;
+  position: relative;
 
   .content-section {
     width: 55%;
@@ -815,6 +780,60 @@ body {
       margin-left: 8px;
       font-size: 25px;
       cursor: pointer;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1280px;
+
+  .swiper-wrapper{
+    
+    .swiper-slide{
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.swiperContainer{
+  position: relative;
+  width: 90%;
+  max-width: 1540px;
+  margin: auto;
+
+  .swiper{
+    width: 80%;
+  }
+
+  .custom-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .swiper-button-prev {
+    left: 0px;
+
+    &::after{
+      font-size: 30px;
+      font-weight: 900;
+      color: #fff;
+    }
+  }
+
+  .swiper-button-next {
+    right: 0px !important;
+
+    &::after{
+      font-size: 30px;
+      font-weight: 900;
+      color: #fff;
     }
   }
 }

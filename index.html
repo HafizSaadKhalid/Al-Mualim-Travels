@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al-Mualim-Travels</title>
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="logos/image 1.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    />
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -64,10 +66,12 @@
           <div class="hajj-heading">
             <h3>Hajj Packages</h3>
           </div>
-          <div class="hajj-images">
-            <img src="images/Group 62.png" alt="Hajj Image Downloading" />
-            <img src="images/Group 62.png" alt="Hajj Image Downloading" />
-            <img src="images/Group 62.png" alt="Hajj Image Downloading9" />
+          <div class="container">
+            <div class="row">
+              <div class="col-4 p-3"><img src="images/Group 62.png" alt="Hajj Image Downloading" class="w-100"/></div>
+              <div class="col-4 p-3"><img src="images/Group 62.png" alt="Hajj Image Downloading" class="w-100" /></div>
+              <div class="col-4 p-3"><img src="images/Group 62.png" alt="Hajj Image Downloading9" class="w-100" /></div>
+            </div>
           </div>
         </div>
       </section>
@@ -77,11 +81,13 @@
           <div class="umrah-heading">
             <h3>Umrah Packages</h3>
           </div>
-          <div class="umrah-images">
-            <img src="images/1 7.png" alt="Umrah Image Downloading" />
-            <img src="images/1 9.png" alt="Umrah Image Downloading" />
-            <img src="images/1 10.png" alt="Umrah Image Downloading9" />
-          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-4 p-3"><img src="images/1 7.png" alt="Umrah Image Downloading" class="w-100"/></div>
+              <div class="col-4 p-3"><img src="images/1 9.png" alt="Umrah Image Downloading" class="w-100"/></div>
+              <div class="col-4 p-3"><img src="images/1 10.png" alt="Umrah Image Downloading9" class="w-100"/></div>
+        </div>
+        </div>
         </div>
       </section>
 
@@ -90,19 +96,23 @@
           <div class="Domestic-heading">
             <h3>Domestic Packages</h3>
           </div>
-          <div class="Domestic-images">
-            <img
+          <div class="container">
+            <div class="row">
+              <div class="col-4 p-3"><img
               src="images/Wihte and Brown Modern Tours and Travels Agency Promotion Flyer 2 (1).png"
               alt="Domestic Image Downloading"
-            />
-            <img
+             class="w-100"/></div>
+              <div class="col-4 p-3"><img
               src="images/Wihte and Brown Modern Tours and Travels Agency Promotion Flyer 2 (1).png"
               alt="Domestic Image Downloading"
-            /><img
+             class="w-100"/></div>
+              <div class="col-4 p-3"><img
               src="images/Wihte and Brown Modern Tours and Travels Agency Promotion Flyer 2 (1).png"
               alt="Domestic Image Downloading"
-            />
-          </div>
+             class="w-100"/></div>
+        </div>
+        </div>
+
         </div>
       </section>
 
@@ -115,10 +125,24 @@
               comfort, adventure, and affordability.
             </p>
           </div>
-          <div class="International-images">
+          <!-- <div class="International-images">
             <img src="images/maldives.png" alt="" />
             <img src="images/malaysia.png" alt="" />
             <img src="images/dubai.png" alt="" />
+          </div> -->
+
+          <div class="swiperContainer">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="images/maldives.png" alt=""/></div>
+                <div class="swiper-slide"> <img src="images/malaysia.png" alt=""/></div>
+                <div class="swiper-slide"> <img src="images/dubai.png"    alt=""/></div>
+                <div class="swiper-slide"> <img src="images/malaysia.png" alt=""/></div>
+                <div class="swiper-slide"> <img src="images/dubai.png"    alt=""/></div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -454,59 +478,6 @@
             </p>
           </div>
           <div class="box-two">
-            <!-- <div class="box">
-              <h4>CONTACT INFO</h4>
-              <p class="lato-family">
-                Address #1 <br />
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,
-              </p>
-              <p class="lato-family">
-                Address #2 <br />
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s,
-              </p>
-
-              <div class="contact-section">
-                <div class="call-section">
-                  <a href="tel:+923333032648"><img src="logos/Phone.png" /></a>
-                  <div class="content">
-                    <div class="inform"><p>Drop line:</p></div>
-                    <div class="number">
-                      <a href="tel:+923333032648">+92-333-3032648</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="call-section">
-                  <a href="https://wa.me/923333032648" target="_blank"
-                    ><img src="logos/Frame 35.png"
-                  /></a>
-                  <div class="content">
-                    <div class="inform"><p>WhatsApp:</p></div>
-                    <div class="number">
-                      <a href="https://wa.me/923333032648" target="_blank"
-                        >+92-333-3032648</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="call-section">
-                  <a href="mailto:saadkhalid7ctech@gmail.com"
-                    ><img src="logos/Email.png"
-                  /></a>
-                  <div class="content">
-                    <div class="inform"><p>Email:</p></div>
-                    <div class="number">
-                      <a href="mailto:saadkhalid7ctech@gmail.com"
-                        >saadkhalid7ctech@gmail.com</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
             <div class="box">
               <h4>QUICK LINKS</h4>
               <ul>
@@ -520,9 +491,6 @@
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </div>
-
-            <!-- asdasdasdasvnjdghaosdg -->
-
             <div class="box">
               <h4>CONTACT INFO</h4>
               <p class="lato-family">
@@ -554,8 +522,8 @@
                   <div class="content">
                     <div class="inform"><p>WhatsApp:</p></div>
                     <div class="number">
-                      <a href="https://wa.me/923333032648" target="_blank"
-                        >+92-333-3032648</a
+                      <a href="https://wa.me/923128784703" target="_blank"
+                        >+92-312-8784703</a
                       >
                     </div>
                   </div>
@@ -591,5 +559,24 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal', // horizontal ya vertical
+      loop: true, // last slide ke baad first slide
+      slidesPerView: 3,
+      spaceBetween: 30,
+      // navigation: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
