@@ -1,10 +1,7 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-body {
-  /* background-color: rgb(4, 16, 38); */
 }
 /* font-family: "Open Sans", sans-serif;
   font-family: "Lato", sans-serif; */
@@ -125,7 +122,7 @@ body {
   .hajj-heading {
     font-family: "Lato", sans-serif;
     font-size: 36px;
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
     font-weight: 400;
     h3 {
@@ -167,7 +164,11 @@ body {
   }
 }
 .international-tour-section {
-  background: linear-gradient(to right, rgba(41, 68, 128, 0.5), rgba(43, 83, 141, 0.5)),
+  background: linear-gradient(
+      to right,
+      rgba(41, 68, 128, 0.5),
+      rgba(43, 83, 141, 0.5)
+    ),
     url("images/image\ \(2\).png");
 
   width: 100%;
@@ -214,11 +215,55 @@ body {
       width: 100%;
     }
   }
+  .swiperContainer {
+    position: relative;
+    width: 90%;
+    max-width: 1540px;
+    margin: auto;
+
+    .swiper {
+      width: 80%;
+      max-width: 1280px;
+
+      .swiper-slide {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .custom-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    .swiper-button-prev {
+      left: 0px;
+
+      &::after {
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0px !important;
+
+      &::after {
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+  }
 }
 .choose-us-section {
   width: 100%;
   padding-top: 70px;
-  
+
   position: relative;
 
   .content {
@@ -232,29 +277,18 @@ body {
       color: black;
     }
   }
-  .boxes {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
+  .choose-container {
     padding-top: 30px;
-    gap: 20px;
 
     .box {
-      width: 31.5%;
-      max-width: 400px;
-      height: 293px;
-      border: 1px solid;
+      min-height: 300px;
       border-radius: 33px;
       background-color: #3f7ae5;
       border: 0cap;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      flex-direction: column;
       padding: 20px;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
       transition: 0.4s;
+      text-align: center;
 
       &:hover {
         scale: 1.02;
@@ -267,6 +301,7 @@ body {
         color: white;
         font-weight: 400;
         font-size: 22px;
+        margin-top: 15px;
       }
       p {
         font-family: "Open Sans", sans-serif;
@@ -275,6 +310,7 @@ body {
         font-size: 13px;
         max-width: 200px;
         letter-spacing: 1px;
+        margin: auto;
       }
     }
     .color {
@@ -370,8 +406,11 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 65px;
+    gap: 46px;
     max-width: 1140px;
+    @media (max-width: 1024px) {
+      gap: 26px;
+    }
 
     .group {
       width: 20%;
@@ -382,14 +421,21 @@ body {
       .box {
         border-radius: 15px;
         background-color: #c19a51;
-        height: 185px;
-        width: 185px;
+        /* min-height: 185px; */
+        /* width: 185px; */
         color: aliceblue;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 0.4s;
+        padding: 70px;
 
+        @media (max-width: 1440px) {
+          padding: 56px;
+        }
+        @media (max-width: 1024px) {
+          padding: 40px;
+        }
         &:hover {
           scale: 1.02;
           transform: translateY(-8px);
@@ -463,6 +509,12 @@ body {
       border-radius: 20px;
       display: flex;
       justify-content: space-between;
+      transition: 0.4s;
+      &:hover {
+        scale: 1.02;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
 
       .logos {
         height: 100%;
@@ -516,18 +568,20 @@ body {
     letter-spacing: 1px;
     font-weight: 300;
   }
-  .describe-section {
-    width: 80%;
-    max-width: 1300px;
-    margin: auto;
+
+  .pilgrimage-container {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
 
     .boxes {
       background-color: #0e224a;
       border-radius: 10px;
+      transition: 0.4s;
+
+      &:hover {
+        scale: 1.02;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
 
       img {
         width: 100%;
@@ -548,6 +602,9 @@ body {
           display: flex;
           align-items: center;
           gap: 10px;
+          &:last-child {
+            margin: 0;
+          }
 
           span {
             color: white;
@@ -561,6 +618,7 @@ body {
       }
       .description {
         margin: 10px 0px 0px 20px;
+        padding-bottom: 10px;
       }
     }
   }
@@ -603,6 +661,12 @@ body {
       font-family: "Lato", sans-serif;
       font-weight: 400;
       color: rgb(206, 206, 206);
+      transition: 0.4s;
+      &:hover {
+        scale: 1.02;
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
 
       .style {
         font-family: "Lato", sans-serif;
@@ -649,14 +713,13 @@ body {
   margin-top: 60px;
 
   .bottom-one {
-    width: 83%;
     color: #f8f8f8;
     margin: auto;
+    padding: 50px 0px;
     display: flex;
-    justify-content: space-between;
-    padding:30px 0px;
-    margin: auto;
-    gap: 90px;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1440px;
 
     .box-one {
       max-width: 360px;
@@ -671,169 +734,113 @@ body {
         letter-spacing: 1px;
       }
     }
-    .box-two {
+    .box {
+      max-width: 200px;
       display: flex;
-      justify-content: space-around;
-      width: 60%;
-
-      .box {
-        max-width: 200px;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      h4 {
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .q-pad {
+        list-style-type: none;
+        padding: 0%;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        gap: 20px;
+        gap: 10px;
 
-        .lato-family {
+        li:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        a {
+          text-decoration: none;
           font-family: "Lato", sans-serif;
+          color: white;
           font-size: 14px;
           line-height: 22px;
           letter-spacing: 1px;
         }
-
-        h4 {
-          color: white;
-          font-family: "Lato", sans-serif;
-          font-size: 25px;
-          font-weight: 400;
-          text-align: center;
-        }
-        ul {
-          list-style-type: none;
-
-          li {
-            margin-top: 12px;
-
-            &:hover{
-              text-decoration: underline;
-            }
-          }
-
-          a {
-            text-decoration: none;
-            font-family: "Lato", sans-serif;
-            color: white;
-            font-size: 14px;
-            line-height: 22px;
-            letter-spacing: 1px;
-          }
-        }
-        .contact-section {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
-          margin-top: 10px;
-
-          .call-section {
-            display: flex;
-            justify-content: space-between;
-
-            .content {
-              width: 78%;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-
-              .inform {
-                font-family: "Lato", sans-serif;
-                font-size: 9px;
-              }
-
-              .number a {
-                color: white;
-                text-decoration: none;
-                font-size: 12px;
-                font-family: "Lato", sans-serif;
-              }
-            }
-          }
-        }
       }
-    }
-  }
-}
-.bottom-two {
-  width: 100%;
-  padding: 10px 85px;
-  background-color: #202020;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .section-mid {
-    font-family: "Lato", sans-serif;
-    color: white;
-    letter-spacing: 1px;
-    font-weight: 00;
-    width: 80%;
-    text-align: center;
-  }
-  .section {
-    font-family: "Lato", sans-serif;
-    color: white;
-    letter-spacing: 1px;
-    width: 10%;
-    display: flex;
-    justify-content: end;
-
-    img {
-      margin-left: 8px;
-      font-size: 25px;
-      cursor: pointer;
-    }
-  }
-}
-
-.swiper {
-  width: 100%;
-  max-width: 1280px;
-
-  .swiper-wrapper{
-    
-    .swiper-slide{
-
-      img{
+      .contact-section {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .call-section {
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+
+          .content {
+            width: 78%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .inform {
+              font-family: "Lato", sans-serif;
+              font-size: 9px;
+
+              .help-care {
+                margin: 0%;
+              }
+            }
+
+            .number a {
+              color: white;
+              text-decoration: none;
+              font-size: 12px;
+              font-family: "Lato", sans-serif;
+            }
+          }
+        }
+      }
+      .lato-family {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        margin: 0%;
       }
     }
   }
-}
+  .bottom-two {
+    width: 100%;
+    padding: 10px 85px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-
-.swiperContainer{
-  position: relative;
-  width: 90%;
-  max-width: 1540px;
-  margin: auto;
-
-  .swiper{
-    width: 80%;
-  }
-
-  .custom-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-  }
-
-  .swiper-button-prev {
-    left: 0px;
-
-    &::after{
-      font-size: 30px;
-      font-weight: 900;
-      color: #fff;
+    .section-mid {
+      font-family: "Lato", sans-serif;
+      color: white;
+      letter-spacing: 1px;
+      font-weight: 00;
+      width: 80%;
+      text-align: center;
     }
-  }
+    .section {
+      font-family: "Lato", sans-serif;
+      color: white;
+      letter-spacing: 1px;
+      width: 10%;
+      display: flex;
+      justify-content: end;
 
-  .swiper-button-next {
-    right: 0px !important;
-
-    &::after{
-      font-size: 30px;
-      font-weight: 900;
-      color: #fff;
+      img {
+        margin-left: 8px;
+        font-size: 25px;
+        cursor: pointer;
+      }
     }
   }
 }
