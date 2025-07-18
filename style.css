@@ -121,7 +121,7 @@
 
   .hajj-heading {
     font-family: "Lato", sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     margin-top: 70px;
     text-align: center;
     font-weight: 400;
@@ -136,7 +136,7 @@
 
   .umrah-heading {
     font-family: "Lato", sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     margin-top: 50px;
     text-align: center;
     font-weight: 400;
@@ -154,7 +154,7 @@
       letter-spacing: -1px;
     }
     font-family: "Lato", sans-serif;
-    font-size: 36px;
+    font-size: 38px;
     margin-top: 50px;
     text-align: center;
     font-weight: 400;
@@ -191,6 +191,14 @@
       color: white;
       font-size: 38px;
       margin-top: 10px;
+
+      @media (max-width: 1024px) {
+        margin-top: 0px;
+      }
+      @media (max-width: 500px) {
+        font-size: 24px;
+      }
+
     }
     p {
       font-family: "Lato", sans-serif;
@@ -200,6 +208,14 @@
       font-weight: 300;
       margin-top: 15px;
       max-width: 760px;
+
+      @media (max-width: 1024px) {
+        font-size: 16px;
+        margin-top: 0px;
+      }
+      @media (max-width: 500px) {
+        font-size: 10px;
+      }
     }
   }
 
@@ -275,6 +291,11 @@
       font-family: "Lato", sans-serif;
       font-size: 38px;
       color: black;
+
+      @media (max-width: 500px) {
+        font-size: 24px;
+        font-weight: 700;
+      }
     }
   }
   .choose-container {
@@ -290,18 +311,46 @@
       transition: 0.4s;
       text-align: center;
 
-      &:hover {
-        scale: 1.02;
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      @media (max-width: 1199px) {
+        min-height: 200px;
+      }
+      @media (max-width: 500px) {
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+        gap: 10px;
+        border-radius: 16px;
+        padding: 10px;
       }
 
+      &:hover {
+        scale: 1.02;
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      }
+      img {
+        @media (max-width: 500px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .choose-us-content {
+        @media (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
       h4 {
         font-family: "Open Sans", sans-serif;
         color: white;
         font-weight: 400;
         font-size: 22px;
         margin-top: 15px;
+
+        @media (max-width: 500px) {
+          font-size: 18px;
+        }
       }
       p {
         font-family: "Open Sans", sans-serif;
@@ -311,6 +360,14 @@
         max-width: 200px;
         letter-spacing: 1px;
         margin: auto;
+
+        @media (max-width: 1199px) {
+          max-width: 500px;
+        }
+        @media (max-width: 500px) {
+          font-size: 9px;
+          text-align: start;
+        }
       }
     }
     .color {
@@ -334,6 +391,28 @@
     @media (max-width: 1440px) {
       left: 38.8%;
     }
+    @media (max-width: 1199px) {
+      left: 35.8%;
+      top: 8%;
+    }
+    @media (max-width: 1000px) {
+      left: 33.8%;
+      top: 8%;
+    }
+    @media (max-width: 800px) {
+      left: 28.8%;
+      top: 8%;
+    }
+    @media (max-width: 650px) {
+      left: 22.8%;
+      top: 8%;
+    }
+    @media (max-width: 500px) {
+      left: 22.8%;
+      top: 12%;
+      width: 42px;
+      height: 42px;
+    }
   }
   .line1 {
     width: 293px;
@@ -341,7 +420,6 @@
     background-color: #3669cb;
     position: absolute;
     border: 0cap;
-
     right: 15%;
     top: 5%;
     transform: rotate(-33deg);
@@ -350,6 +428,22 @@
 
     @media (max-width: 1440px) {
       right: 5%;
+    }
+    @media (max-width: 1199px) {
+      left: 64.8%;
+      top: 4%;
+    }
+    @media (max-width: 800px) {
+      left: 65%;
+      top: -2%;
+    }
+    @media (max-width: 650px) {
+      left: 66%;
+      top: -2%;
+    }
+    @media (max-width: 500px) {
+      left: 46%;
+      top: -6%;
     }
   }
   .line2 {
@@ -365,6 +459,22 @@
     z-index: -1;
     @media (max-width: 1440px) {
       right: -2%;
+    }
+    @media (max-width: 1199px) {
+      left: 74.8%;
+      top: 4%;
+    }
+    @media (max-width: 800px) {
+      left: 79%;
+      top: -2%;
+    }
+    @media (max-width: 650px) {
+      left: 80%;
+      top: -2%;
+    }
+    @media (max-width: 500px) {
+      left: 69%;
+      top: -6%;
     }
   }
 }
@@ -387,7 +497,7 @@
     }
     .line {
       color: #c19a52;
-      width: 15%;
+      width: 18%;
       border-bottom: 2px solid;
     }
   }
@@ -421,8 +531,6 @@
       .box {
         border-radius: 15px;
         background-color: #c19a51;
-        /* min-height: 185px; */
-        /* width: 185px; */
         color: aliceblue;
         display: flex;
         justify-content: center;
@@ -459,12 +567,6 @@
   }
 }
 .services-section {
-  background: linear-gradient(
-      to right,
-      rgba(21, 46, 109, 0.4),
-      rgba(15, 47, 101, 0.4)
-    ),
-    url("images/Rectangle\ 68.png");
   width: 100%;
   height: 500px;
   background-repeat: no-repeat;
@@ -472,52 +574,78 @@
   margin-top: 30px;
   padding: 50px;
   background-position: bottom;
+  background: linear-gradient(
+      to right,
+      rgba(21, 46, 109, 0.4),
+      rgba(15, 47, 101, 0.4)
+    ),
+    url("images/Rectangle\ 68.png");
+
+  @media (max-width: 992px) {
+    padding: 20px;
+    height: 0%;
+  }
 
   h3 {
     font-family: "Lato", sans-serif;
     color: white;
     text-align: center;
     font-size: 33px;
+
+    @media (max-width: 530px) {
+      font-size: 28px;
+    }
   }
   .sub-heading {
     font-family: "Open Sans", sans-serif;
     color: white;
     font-size: 21px;
     text-align: center;
-    margin-top: 15px;
     font-weight: 300;
     letter-spacing: 1px;
     max-width: 1250px;
     margin: 15px auto;
+
+    @media (max-width: 992px) {
+      font-size: 18px;
+      max-width: 755px;
+    }
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+    @media (max-width: 530px) {
+      font-size: 13px;
+    }
   }
-  .content {
+
+  .service-boxes {
     margin-top: 40px;
-    width: 85%;
-    max-width: 1140px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 30px;
-    justify-content: center;
-    align-items: center;
     padding-top: 20px;
 
+    @media (max-width: 992px) {
+      padding-top: 0px;
+    }
+
     .content-box {
-      width: 46%;
       height: 105px;
       background-color: rgb(14, 34, 74, 1);
       border-radius: 20px;
       display: flex;
       justify-content: space-between;
       transition: 0.4s;
+
+      @media (max-width: 992px) {
+        height: 75px;
+      }
+
       &:hover {
-        scale: 1.02;
-        transform: translateY(-8px);
+        scale: 1.01;
+        transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
       }
 
       .logos {
-        height: 100%;
         width: 20%;
         display: flex;
         justify-content: center;
@@ -529,18 +657,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 5px;
 
+        @media (max-width: 992px) {
+          padding: 15px 0px;
+        }
         h5 {
           font-family: "Open Sans", sans-serif;
           color: white;
-          font-size: 17px;
+          font-size: 17px !important;
         }
         .setting {
           font-family: "Open Sans", sans-serif;
           color: rgb(209, 208, 208);
-          font-size: 10px;
+          font-size: 10px !important;
           max-width: 300px;
+          margin: 0;
+
+          @media (max-width: 992px) {
+            margin: 0%;
+          }
         }
       }
     }
@@ -593,15 +728,29 @@
         padding: 10px;
         font-size: 22px;
         font-weight: 400;
+        @media (max-width: 767px) {
+          font-size: 15px;
+        }
       }
       ul {
         list-style-type: none;
+
+        @media (max-width: 1200px) {
+          padding: 0;
+        }
 
         li {
           margin-bottom: 20px;
           display: flex;
           align-items: center;
           gap: 10px;
+          @media (max-width: 991px) {
+            margin-bottom: 15px;
+          }
+          @media (max-width: 767px) {
+            margin-bottom: 5px;
+          }
+
           &:last-child {
             margin: 0;
           }
@@ -610,9 +759,20 @@
             color: white;
             font-family: "Lato", sans-serif;
             font-size: 22px;
+
+            @media (max-width: 991px) {
+              font-size: 15px;
+            }
+            @media (max-width: 767px) {
+              font-size: 10px;
+            }
           }
           .check {
             width: 25px;
+
+            @media (max-width: 991px) {
+              width: 20px;
+            }
           }
         }
       }
