@@ -23,18 +23,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+        background-color: #1c4171;
+    }
 
     .header-left-side {
       img:hover {
         scale: 1.05;
         transition: 0.5s;
       }
+      img {
+        @media (max-width: 768px) {
+          width: 90px;
+        }
+      }
     }
 
     .header-right-side {
-      padding-right: 82px;
+      padding-right: 4%;
       display: flex;
       gap: 16px;
+      @media (max-width: 1440px) {
+        gap: 8px;
+      }
+
       a {
         text-decoration: none;
         color: white;
@@ -45,24 +57,37 @@
         border-radius: 8px;
         font-family: "Open Sans", sans-serif;
 
+        @media (max-width: 768px) {
+          padding: 6px 10px;
+          font-size: 11px;
+        }
+
         &:hover {
           background-color: #dbae58;
-          /* scale: 1.05; */
           color: #344160;
-          /* transition: 0.5s; */
         }
       }
     }
   }
-
   .header-content-section {
-    width: 50%;
-    margin-left: 130px;
-    margin-top: 130px;
+    width: 100%;
+
+    margin-top: 7%;
+
     h1 {
       font-family: "Lato", sans-serif;
       font-size: 50px;
       color: white;
+      max-width: 540px;
+      margin-left: 7%;
+
+      @media (max-width: 1440px) {
+        font-size: 38px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 380px;
+      }
     }
     p {
       color: rgb(224, 223, 223);
@@ -71,10 +96,19 @@
       font-family: sans-serif;
       font-weight: lighter;
       letter-spacing: 1px;
+      max-width: 540px;
+      margin-left: 7%;
+
+      @media (max-width: 1440px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        max-width: 380px;
+      }
     }
 
     button {
-      margin-top: 80px;
+      margin: 50px 10px 0px 7%;
       font-size: 20px;
       font-weight: bolder;
       color: white;
@@ -83,15 +117,42 @@
       border: 2px solid white;
       padding: 20px;
       border-radius: 10px;
-      margin-right: 10px;
       letter-spacing: 1px;
       cursor: pointer;
+      &:last-child {
+        margin-left: 0%;
+      }
+
+      @media (max-width: 1440px) {
+        padding: 15px 20px;
+        margin-top: 100px;
+      }
+
+      @media (max-width: 1133px) {
+        font-size: 18px;
+
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 90%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 16px;
+
+        &:last-child {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
 
       &:hover {
         background-color: #dbae58;
         border-color: #dbae58;
-        /* scale: 1.05; */
-        /* transition: 0.5s; */
         color: #344160;
       }
     }
@@ -111,11 +172,26 @@
     align-items: center;
     bottom: 22%;
 
+    @media (max-width: 768px) {
+      bottom: 0%;
+      left: 5%;
+      flex-direction: row;
+      background-color: transparent;
+      height: 0;
+      gap: 20px;
+    }
     .fa {
       color: black;
+      font-size: 20px;
+
+      @media (max-width: 768px) {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+      }
     }
   }
 }
+
 .hajj-packages {
   width: 100%;
 
@@ -198,7 +274,6 @@
       @media (max-width: 500px) {
         font-size: 24px;
       }
-
     }
     p {
       font-family: "Lato", sans-serif;
@@ -486,18 +561,20 @@
     display: flex;
     justify-content: center;
     color: white;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
+    text-align: center;
 
     .color {
       font-family: "Lato", sans-serif;
       font-size: 18px;
       font-weight: 300;
       color: #c19a52;
+      margin: 0%;
     }
     .line {
       color: #c19a52;
-      width: 18%;
+      width: 25%;
       border-bottom: 2px solid;
     }
   }
@@ -510,20 +587,17 @@
   }
 
   .boxes {
-    padding: 20px;
-    padding-top: 50px;
-    width: 80%;
+    padding: 20px 0px;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 46px;
+    gap: 15px;
+    flex-wrap: wrap;
+    gap: 26px;
     max-width: 1140px;
-    @media (max-width: 1024px) {
-      gap: 26px;
-    }
 
     .group {
-      width: 20%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -536,18 +610,35 @@
         justify-content: center;
         align-items: center;
         transition: 0.4s;
-        padding: 70px;
+        height: 200px;
+        width: 200px;
 
         @media (max-width: 1440px) {
-          padding: 56px;
+          height: 160px;
+          width: 160px;
         }
-        @media (max-width: 1024px) {
-          padding: 40px;
+        @media (max-width: 1060px) {
+          height: 140px;
+          width: 140px;
+        }
+        @media (max-width: 550px) {
+          height: 100px;
+          width: 100px;
+        }
+        @media (max-width: 550px) {
+          height: 80px;
+          width: 80px;
         }
         &:hover {
           scale: 1.02;
           transform: translateY(-8px);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        img {
+          @media (max-width: 550px) {
+            height: 40px;
+            width: 40px;
+          }
         }
       }
       p {
@@ -556,6 +647,9 @@
         font-size: 22px;
         padding: 10px;
         color: #c19a51;
+        @media (max-width: 1060px) {
+          font-size: 16px;
+        }
       }
       .chang {
         color: #878787;
@@ -569,18 +663,17 @@
 .services-section {
   width: 100%;
   height: 500px;
-  background-repeat: no-repeat;
   background-size: cover;
   margin-top: 30px;
   padding: 50px;
   background-position: bottom;
-  background: linear-gradient(
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
       to right,
       rgba(21, 46, 109, 0.4),
       rgba(15, 47, 101, 0.4)
     ),
     url("images/Rectangle\ 68.png");
-
   @media (max-width: 992px) {
     padding: 20px;
     height: 0%;
